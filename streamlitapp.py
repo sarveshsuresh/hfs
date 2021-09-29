@@ -38,13 +38,12 @@ def run_query(query):
     rows = conn.execute(query, headers=1)
     return rows
 
-sheet_url = st.secrets["https://docs.google.com/spreadsheets/d/12SwUfilfyL1MgqgjP9kM8jEUDSboFMLb0mq7cyCiCkM/edit#gid=1613268989"]
+sheet_url = st.secrets["private_gsheets_url"]
 rows = run_query(f'SELECT * FROM "{sheet_url}"')
 
 # Print results.
 for row in rows:
     st.write(f"{row.name} has a :{row.pet}:")
-
 
 
 data=pd.read_csv('complete_backtester_refined.csv')
