@@ -24,7 +24,7 @@ from gsheetsdb import connect
 
 # Create a connection object.
 credentials = service_account.Credentials.from_service_account_info(
-    st.secrets["service-acc"],
+    st.secrets["111530319391762022741"],
     scopes=[
         "https://www.googleapis.com/auth/spreadsheets",
     ],
