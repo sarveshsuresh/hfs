@@ -44,7 +44,7 @@ rows = run_query(f'SELECT * FROM "{sheet_url}"')
 
 data1=pd.read_csv('complete_backtester_refined_head.csv')
 data = pd.DataFrame(rows,columns=list(data1.columns))
-st.write(data.head(3))
+#st.write(data.head(3))
 
 
 
