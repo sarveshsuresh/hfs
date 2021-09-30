@@ -34,7 +34,7 @@ conn = connect(credentials=credentials)
 
 # Perform SQL query on the Google Sheet.
 # Uses st.cache to only rerun when the query changes or after 10 min.
-@st.cache
+
 def run_query(query):
     rows = conn.execute(query, headers=1)
     return rows
@@ -49,7 +49,7 @@ data = pd.DataFrame(rows,columns=list(data1.columns))
 
 
 
-
+@st.cache
 data['Change']=data['Close_Price']/data['Start_Price']
 data.drop(columns=['ROCE_average'],inplace=True)
 for i in data.columns:
