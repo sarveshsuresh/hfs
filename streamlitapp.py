@@ -63,6 +63,8 @@ data['PE']=data['Start_Price']/data['EPS in Rs']
 data['DivYield']=data['Dividend Payout %']*data['EPS in Rs']/(100*data['Start_Price'])
 data['Shares_Outstanding']=data['Net Profit']*10000000/data['EPS in Rs']
 data['PricetoSales']=data['Start_Price']*data['Shares_Outstanding']/(data['Sales']*10000000)
+st.write('Data Format')
+st.write(data.head(3))
 st.write('Create Ratios')
 val="data['Share Capital']"
 
