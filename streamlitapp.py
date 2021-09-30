@@ -1,5 +1,6 @@
 import pandas as pd 
 import numpy as np 
+import sqlite3
 #import matplotlib.pyplot as plt 
 
 import streamlit as st 
@@ -41,14 +42,17 @@ def run_query(query):
 sheet_url = st.secrets["private_gsheets_url"]
 rows = run_query(f'SELECT * FROM "{sheet_url}"')
 
-# Print results.
-for row in rows:
-    st.write(f"{row.Company}:")
+conn = sqlite3.connect(credentials=credentials) 
+sql_query = pd.read_sql_query ('''
+                               SELECT
+                               *
+                               FROM "{sheet_url}"
+                               ''', conn)
+data = pd.DataFrame(sql_query)
 
 
 
-
-data=pd.read_csv('complete_backtester_refined.csv')
+#data=pd.read_csv('complete_backtester_refined.csv')
 data['Change']=data['Close_Price']/data['Start_Price']
 data.drop(columns=['ROCE_average'],inplace=True)
 for i in data.columns:
