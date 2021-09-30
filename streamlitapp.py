@@ -1,6 +1,6 @@
 import pandas as pd 
 import numpy as np 
-import sqlite3
+
 #import matplotlib.pyplot as plt 
 
 import streamlit as st 
@@ -42,13 +42,8 @@ def run_query(query):
 sheet_url = st.secrets["private_gsheets_url"]
 rows = run_query(f'SELECT * FROM "{sheet_url}"')
 
-conn = sqlite3.connect(credentials=credentials) 
-sql_query = pd.read_sql_query ('''
-                               SELECT
-                               *
-                               FROM "{sheet_url}"
-                               ''', conn)
-data = pd.DataFrame(sql_query)
+
+data = pd.DataFrame(rows)
 
 
 
