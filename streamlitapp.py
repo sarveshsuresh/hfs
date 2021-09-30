@@ -49,7 +49,7 @@ data = pd.DataFrame(rows,columns=list(data1.columns))
 
 
 
-@st.cache
+
 data['Change']=data['Close_Price']/data['Start_Price']
 data.drop(columns=['ROCE_average'],inplace=True)
 for i in data.columns:
