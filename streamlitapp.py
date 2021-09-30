@@ -34,7 +34,7 @@ conn = connect(credentials=credentials)
 
 # Perform SQL query on the Google Sheet.
 # Uses st.cache to only rerun when the query changes or after 10 min.
-#@st.cache(ttl=600)
+@st.cache
 def run_query(query):
     rows = conn.execute(query, headers=1)
     return rows
@@ -45,6 +45,7 @@ rows = run_query(f'SELECT * FROM "{sheet_url}"')
 data1=pd.read_csv('complete_backtester_refined_head.csv')
 data = pd.DataFrame(rows,columns=list(data1.columns))
 #st.write(data.head(3))
+
 
 
 
