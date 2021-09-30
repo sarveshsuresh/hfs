@@ -42,13 +42,13 @@ def run_query(query):
 sheet_url = st.secrets["private_gsheets_url"]
 rows = run_query(f'SELECT * FROM "{sheet_url}"')
 
-
-data = pd.DataFrame(rows)
+data1=pd.read_csv('complete_backtester_refined.csv')
+data = pd.DataFrame(rows,columns=list(data1.columns))
 st.write(data.head(3))
 
 
 
-#data=pd.read_csv('complete_backtester_refined.csv')
+
 data['Change']=data['Close_Price']/data['Start_Price']
 data.drop(columns=['ROCE_average'],inplace=True)
 for i in data.columns:
