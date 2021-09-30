@@ -1,0 +1,4 @@
+year,Company,Start_Price,Close_Price,Share Capital,Reserves,Borrowings,Other Liabilities,Total Liabilities,Fixed Assets,CWIP,Investments,Other Assets,Total Assets,EPS_growth,ROCE_average,Month,Year,Cash from Operating Activity,Cash from Investing Activity,Cash from Financing Activity,Net Cash Flow,Sales,Expenses,Operating Profit,OPM %,Other Income,Interest,Depreciation,Profit before tax,Tax %,Net Profit,EPS in Rs,Dividend Payout %,ROCE %,Debtor Days,Inventory Turnover
+Mar-11,ZYDUSWELL,591.4500122,417.8999939,39,103,0,77,219,59,31,0,130,219,0,0,Mar,2011,43,-40,-14,-11,336,252,84,25,7,0,1,90,34,59,15.22,26,,1,
+Mar-12,ZYDUSWELL,417.8999939,603.6500244,39,148,0,80,267,96,0,0,171,267,0,0,Mar,2012,62,-2,-18,42,337,260,77,23,9,0,4,82,17,68,17.32,29,50,1,3.83
+Mar-13,ZYDUSWELL,603.6500244,590.2999878,39,217,0,93,349,94,0,0,255,349,3.984775681,,Mar,2013,69,13,-23,59,388,291,97,25,16,0,4,108,8,97,24.85,24,49,1,3.71
