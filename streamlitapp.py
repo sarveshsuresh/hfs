@@ -44,6 +44,7 @@ rows = run_query(f'SELECT * FROM "{sheet_url}"')
 
 
 data = pd.DataFrame(rows)
+st.write(data.head(3))
 
 
 
