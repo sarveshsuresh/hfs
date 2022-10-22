@@ -173,10 +173,10 @@ st.write('SELECTION CRITERIA 1')
 
 option1 = st.selectbox(
    'Ratio',
-     colz)
+     colz,key='1')
 
 option2=st.selectbox(
-	'sign',('>=',">","<","<=")
+	'sign',('>=',">","<","<="),key='11'
 
 
 
@@ -327,8 +327,8 @@ if more_filts4==True:
 
 
 st.write('Rank By')
-rankopt=st.selectbox('Ratio to rank stocks by',colz)
-ascopt=st.selectbox('',options=('ascending','descending'))
+rankopt=st.selectbox('Ratio to rank stocks by',colz,key='9')
+ascopt=st.selectbox('',options=('ascending','descending'),key='99')
 heads=st.number_input('How many Companies ?',min_value=1, value=5, step=1)
 
 if ascopt:
