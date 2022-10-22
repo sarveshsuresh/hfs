@@ -76,7 +76,7 @@ if agree==True:
 	new_col_name=st.text_input("Enter Name for new Ratio",key="1")
 	val="data['Share Capital']"
 
-	val=st.text_input("Enter equation for new Ratio",key="1")
+	val=st.text_input("Enter equation for new Ratio",key="11")
 	
 
 
@@ -93,7 +93,7 @@ if agree2==True:
 	new_col_name=st.text_input("Enter Name for new Ratio",key="2")
 	val="data['Share Capital']"
 
-	val=st.text_input("Enter equation for new Ratio",key="2")
+	val=st.text_input("Enter equation for new Ratio",key="22")
 	
 
 
@@ -111,7 +111,7 @@ if agree3==True:
 	new_col_name=st.text_input("Enter Name for new Ratio",key="3")
 	val="data['Share Capital']"
 
-	val=st.text_input("Enter equation for new Ratio",key="3")
+	val=st.text_input("Enter equation for new Ratio",key="33")
 	
 
 
@@ -130,7 +130,7 @@ if agree4==True:
 	new_col_name=st.text_input("Enter Name for new Ratio",key="4")
 	val="data['Share Capital']"
 
-	val=st.text_input("Enter equation for new Ratio",key="4")
+	val=st.text_input("Enter equation for new Ratio",key="44")
 	
 
 
@@ -149,7 +149,7 @@ if agree5==True:
 	new_col_name=st.text_input("Enter Name for new Ratio",key="5")
 	val="data['Share Capital']"
 
-	val=st.text_input("Enter equation for new Ratio",key="5")
+	val=st.text_input("Enter equation for new Ratio",key="55")
 	
 
 
@@ -207,7 +207,7 @@ if more_filts1==True:
 	     colz,key="2")
 
 	option2=st.selectbox(
-		'sign',('>=',">","<","<="),key="2"
+		'sign',('>=',">","<","<="),key="22"
 
 
 
@@ -239,7 +239,7 @@ if more_filts2==True:
 	     colz,key="3")
 
 	option2=st.selectbox(
-		'sign',('>=',">","<","<="),key="3"
+		'sign',('>=',">","<","<="),key="33"
 
 
 
@@ -270,7 +270,7 @@ if more_filts3==True:
 	     colz,key="4")
 
 	option2=st.selectbox(
-		'sign',('>=',">","<","<="),key="4"
+		'sign',('>=',">","<","<="),key="44"
 
 
 
@@ -303,7 +303,7 @@ if more_filts4==True:
 	     colz,key="5")
 
 	option2=st.selectbox(
-		'sign',('>=',">","<","<="),key="5"
+		'sign',('>=',">","<","<="),key="55"
 
 
 
