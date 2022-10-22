@@ -73,7 +73,7 @@ val="data['Share Capital']"
 agree = st.checkbox("I want to create a new ratio",key="1")
 if agree==True:
 
-	new_col_name=st.text_input("Enter Name for new Ratio",key="1")
+	new_col_name=st.text_input("Enter Name for new Ratio")
 	val="data['Share Capital']"
 
 	val=st.text_input("Enter equation for new Ratio",key="11")
