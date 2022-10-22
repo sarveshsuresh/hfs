@@ -176,7 +176,7 @@ option1 = st.selectbox(
      colz,key='1111')
 
 option2=st.selectbox(
-	'sign',('>=',">","<","<="),key='11'
+	'sign',('>=',">","<","<="),key='11a'
 
 
 
@@ -207,7 +207,7 @@ if more_filts1==True:
 	     colz,key="2222")
 
 	option2=st.selectbox(
-		'sign',('>=',">","<","<="),key="22"
+		'sign',('>=',">","<","<="),key="22a"
 
 
 
@@ -239,7 +239,7 @@ if more_filts2==True:
 	     colz,key="3333")
 
 	option2=st.selectbox(
-		'sign',('>=',">","<","<="),key="33"
+		'sign',('>=',">","<","<="),key="33a"
 
 
 
@@ -270,7 +270,7 @@ if more_filts3==True:
 	     colz,key="4444")
 
 	option2=st.selectbox(
-		'sign',('>=',">","<","<="),key="44"
+		'sign',('>=',">","<","<="),key="44a"
 
 
 
@@ -303,7 +303,7 @@ if more_filts4==True:
 	     colz,key="5555")
 
 	option2=st.selectbox(
-		'sign',('>=',">","<","<="),key="55"
+		'sign',('>=',">","<","<="),key="55a"
 
 
 
