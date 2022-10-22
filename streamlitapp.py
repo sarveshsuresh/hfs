@@ -197,7 +197,7 @@ elif option2=='<':
 	sub=data[data[option1]<option3]
 
 
-more_filts1=st.checkbox('More filters',key="1")
+more_filts1=st.checkbox('More filters',key="11")
 if more_filts1==True:
 	st.write('SELECTION CRITERIA 2')
 
@@ -229,7 +229,7 @@ if more_filts1==True:
 		sub=sub[sub[option1]<option3]
 
 
-more_filts2=st.checkbox('More filters',key="2")
+more_filts2=st.checkbox('More filters',key="22")
 if more_filts2==True:
 	st.write('SELECTION CRITERIA 3')
 
@@ -260,7 +260,7 @@ if more_filts2==True:
 	elif option2=='<':
 		sub=sub[sub[option1]<option3]
 
-more_filts3=st.checkbox('More filters',key="3")
+more_filts3=st.checkbox('More filters',key="33")
 if more_filts3==True:
 	st.write('SELECTION CRITERIA 4')
 
@@ -293,7 +293,7 @@ if more_filts3==True:
 
 
 
-more_filts4=st.checkbox('More filters',key="4")
+more_filts4=st.checkbox('More filters',key="44")
 if more_filts4==True:
 	st.write('SELECTION CRITERIA 5')
 
