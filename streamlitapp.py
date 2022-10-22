@@ -182,7 +182,7 @@ option2=st.selectbox(
 
 	)
 option3=st.number_input(
-	'value')
+	'value',key='1b')
 
 if option2=='>=':
 	sub=data[data[option1]>=option3]
@@ -214,7 +214,7 @@ if more_filts1==True:
 
 		)
 	option3=st.number_input(
-		'value',key="2")
+		'value',key="2b")
 
 	if option2=='>=':
 		sub=sub[sub[option1]>=option3]
@@ -246,7 +246,7 @@ if more_filts2==True:
 
 		)
 	option3=st.number_input(
-		'value',key="3")
+		'value',key="3b")
 
 	if option2=='>=':
 		sub=sub[sub[option1]>=option3]
@@ -277,7 +277,7 @@ if more_filts3==True:
 
 		)
 	option3=st.number_input(
-		'value',key="4")
+		'value',key="4b")
 
 	if option2=='>=':
 		sub=sub[sub[option1]>=option3]
@@ -310,7 +310,7 @@ if more_filts4==True:
 
 		)
 	option3=st.number_input(
-		'value',key="5")
+		'value',key="5b")
 
 	if option2=='>=':
 		sub=sub[sub[option1]>=option3]
@@ -329,7 +329,7 @@ if more_filts4==True:
 st.write('Rank By')
 rankopt=st.selectbox('Ratio to rank stocks by',colz,key='9')
 ascopt=st.selectbox('',options=('ascending','descending'),key='99')
-heads=st.number_input('How many Companies ?',min_value=1, value=5, step=1)
+heads=st.number_input('How many Companies ?',min_value=1, value=5, step=1,key='9b')
 
 if ascopt:
 	if ascopt=='ascending':
