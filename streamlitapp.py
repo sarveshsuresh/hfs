@@ -197,7 +197,7 @@ elif option2=='<':
 	sub=data[data[option1]<option3]
 
 
-more_filts1=st.checkbox('More filters',key="11")
+more_filts1=st.checkbox('More filters',key="111")
 if more_filts1==True:
 	st.write('SELECTION CRITERIA 2')
 
