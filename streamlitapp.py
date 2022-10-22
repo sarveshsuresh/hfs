@@ -173,7 +173,7 @@ st.write('SELECTION CRITERIA 1')
 
 option1 = st.selectbox(
    'Ratio',
-     colz,key='1')
+     colz,key='1111')
 
 option2=st.selectbox(
 	'sign',('>=',">","<","<="),key='11'
@@ -204,7 +204,7 @@ if more_filts1==True:
 
 	option1 = st.selectbox(
 	   'Ratio',
-	     colz,key="2")
+	     colz,key="2222")
 
 	option2=st.selectbox(
 		'sign',('>=',">","<","<="),key="22"
@@ -236,7 +236,7 @@ if more_filts2==True:
 
 	option1 = st.selectbox(
 	   'Ratio',
-	     colz,key="3")
+	     colz,key="3333")
 
 	option2=st.selectbox(
 		'sign',('>=',">","<","<="),key="33"
@@ -267,7 +267,7 @@ if more_filts3==True:
 
 	option1 = st.selectbox(
 	   'Ratio',
-	     colz,key="4")
+	     colz,key="4444")
 
 	option2=st.selectbox(
 		'sign',('>=',">","<","<="),key="44"
@@ -300,7 +300,7 @@ if more_filts4==True:
 
 	option1 = st.selectbox(
 	   'Ratio',
-	     colz,key="5")
+	     colz,key="5555")
 
 	option2=st.selectbox(
 		'sign',('>=',">","<","<="),key="55"
