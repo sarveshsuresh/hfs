@@ -1,6 +1,6 @@
 import pandas as pd 
 import numpy as np 
-
+pip install 'shillelagh[all]
 #import matplotlib.pyplot as plt 
 
 import streamlit as st 
