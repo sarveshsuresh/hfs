@@ -21,7 +21,8 @@ import yfinance as yf
 
 import streamlit as st
 from google.oauth2 import service_account
-from gsheetsdb import connect
+#from gsheetsdb import connect
+from shillelagh.backends.apsw.db import connect
 
 # Create a connection object.
 credentials = service_account.Credentials.from_service_account_info(
